@@ -55,9 +55,9 @@ body,
   background: silver;
   pointer-events: none;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 .d-flex {
   display: flex;
 }
