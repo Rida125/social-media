@@ -8,26 +8,34 @@
   --cardColor: rgba(255, 255, 255, 0.64);
   --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
   --inputColor: rgba(40, 52, 62, 0.07);
-  --photo: #4CB256;
-  --video: #4A4EB7;
-  --location: #EF5757;
---shedule: #E1AE4A;
+  --photo: #4cb256;
+  --video: #4a4eb7;
+  --location: #ef5757;
+  --shedule: #e1ae4a;
 }
-.App{
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.App {
   overflow: hidden;
   color: var(--black);
   background: #f3f3f3;
   padding: 1rem 1rem;
 }
-.blur{
+.blur {
   position: absolute;
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
   background: #a6ddf0;
-  filter: blur(72px)
+  filter: blur(72px);
 }
-.button{
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +45,7 @@
   background: var(--buttonBg);
   transition: all 100ms ease-out;
 }
-.button:hover{
+.button:hover {
   cursor: pointer;
   color: var(--orange);
   background: transparent;
@@ -47,6 +55,49 @@
   background: silver;
   pointer-events: none;
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar {
   display: none;
+} */
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.border-bottom-1-grey {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.border-top-1-grey {
+  border-top: 1px solid #e0e0e0;
+}
+
+.font-red {
+  color: #ea5151;
+}
+
+.font-slate {
+  color: #637381;
+}
+
+.isClickable {
+  cursor: pointer;
 }
