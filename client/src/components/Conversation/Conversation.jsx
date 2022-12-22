@@ -7,7 +7,6 @@ const Conversation = ({ data, currentUserId, online, message }) => {
 
   useEffect(() => {
     const userId = data.members.find((id) => id !== currentUserId);
-    //console.log(userId._id)
     const getUserData = async () => {
       try {
         const { data } = await getUser(userId);
@@ -18,6 +17,7 @@ const Conversation = ({ data, currentUserId, online, message }) => {
     };
     if (userId) getUserData();
   }, []);
+
   return (
     <>
       <div className="follower conversation">
